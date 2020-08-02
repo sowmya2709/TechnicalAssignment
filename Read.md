@@ -45,6 +45,8 @@ How the framework can be enhanced?
     - Custom Annotations can be used to configure tests as Functional, Regression, Smoke etc and only those tests can be run locally or in Jenkins
     - If more behaviour driven model is preferred then the framework can be used with Cucumber to write behaviour drive tests
     - The same automation suite can have API tests with REST Assured Framework by adding rest helper classes etc
+    - "*.properties" file can used to pass application URL, login credentials or other environment specific test data. 
+        Currently its configured to run in Xero production URL for my dummy credentials(hard-coded)
 
 Recommendation
 
