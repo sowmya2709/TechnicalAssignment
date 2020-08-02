@@ -7,6 +7,7 @@ The framework is modularized for reusability and is robust enough to be enhanced
 Scenarios
 
 I have automated following scenarios for demo purpose, however, we could automate more Banks Feed scenarios
+
     1) Created "ANZ (NZ)" Bank Accounts for different Account Types
     2) Tried creating a duplicate account
 
@@ -22,10 +23,13 @@ The root folder has the tests to execute the BankFeeds feature and here are the 
     "src/test/java/resources"- browser drivers can be added here. I have used Chrome browser and the IDE can be found here
     "src/test/java/xeroTest" - the Bank Feed Application tests can be found here
 
+
+Note: 
+    The tests can be executed on a windows machine without and code changes. 
+    To execute on MAC os you will have to change the chromebrowser IDE location path in "src/test/java/xeroTest/TestBase.java" file
+    
 Steps to execute the automation tests
 
-Note: The tests can be executed on a windows machine without and code changes. 
-      To execute on MAC os you will have to change the chromebrowser IDE location path in "src/test/java/xeroTest/TestBase.java" file
     1) Please make sure JAVA_HOME, MAVEN_HOME is set correctly on a window PC or laptop
     2) Clone the maven project to a local folder and import it to IDE by specifying profile name
     3) Ensure “mvn clean install” runs successfully and all the dependencies are resolved. Make sure your organisation firewall doesn't block Maven repo download
