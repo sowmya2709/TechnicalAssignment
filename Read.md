@@ -5,6 +5,7 @@ The focus of the simple yet robust framework is to highlight the framework featu
 The framework is modularized for reusability and is robust enough to be enhanced to include the Page Object model in the future.
 
 Scenarios
+
 I have automated following scenarios for demo purpose, however, we could automate more Banks Feed scenarios
     1) Created "ANZ (NZ)" Bank Accounts for different Account Types
     2) Tried creating a duplicate account
@@ -12,6 +13,7 @@ I have automated following scenarios for demo purpose, however, we could automat
 Other possible scenarios - Add Multiple accounts, Upload and Download files, Get Bank Feeds by linked bank account or uploading bank feeds etc
 
 The root folder has the tests to execute the BankFeeds feature and here are the details of the folder structure
+
     "src/test/java/commonFunction"- has all the common functionalities of the website such as LoginMethods.java(login, logout),
                                     BankFeedsMethod.java(all functions for BankFeeds scenarios)
     "src/test/java/helpers"- this has all the non-functional helper classes such as listeners. It can also have different Json helpers,
@@ -21,6 +23,7 @@ The root folder has the tests to execute the BankFeeds feature and here are the 
     "src/test/java/xeroTest" - the Bank Feed Application tests can be found here
 
 Steps to execute the automation tests
+
 Note: The tests can be executed on a windows machine without and code changes. 
       To execute on MAC os you will have to change the chromebrowser IDE location path in "src/test/java/xeroTest/TestBase.java" file
     1) Please make sure JAVA_HOME, MAVEN_HOME is set correctly on a window PC or laptop
@@ -32,6 +35,7 @@ Note: The tests can be executed on a windows machine without and code changes.
     7) You can find the execution report under root folder in file “/target/surefire-reports/emailable-report”
 
 How the framework can be enhanced?
+
     - Page Object Model can be created to record all the object of a page and different actions that can be performed and these objects can be reused
     - The automation suite can be integrated with Jenkins to run in different test environments.
     - Custom Annotations can be used to configure tests as Functional, Regression, Smoke etc and only those tests can be run locally or in Jenkins
@@ -39,10 +43,12 @@ How the framework can be enhanced?
     - The same automation suite can have API tests with REST Assured Framework by adding rest helper classes etc
 
 Recommendation
+
     - Some of the pages and objects take more time to load, using Cypress can be another option to manage this limitation of the application.
     - Using "data-automationid" consistently for all objects. "Not all objects have "data-automationid" and in some cases, even this id wasn't consistently recognised.
 
 Advantanges of this framework
+
     - As its java based test, it allows us to add BDD Framework, Rest Assured Test Framework to the same test suite
     - It can be kept as simple and can be enhanced to make as sophisticated as possible
 
